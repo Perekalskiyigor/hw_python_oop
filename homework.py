@@ -6,7 +6,7 @@
 Она такая-то (научным языком), чтобы улучшить, почитай то-то,
 на такой-то странице.
 В таком случае я безмерно, буду вам благодарен и вам воздастся за ваши труды,
-короче пратия вас не забудет!!!,
+короче пратия вас не забудет!!!,св ,,
 в противномслучае партия вас также не забудет"""
 
 from typing import Dict
@@ -120,10 +120,10 @@ class SportsWalking(Training):
 
     def get_spent_calories(self) -> float:
         """Получить количество затраченных калорий."""
-        calories = ((self.coeff_calorie_walk1 * self.weight +
-                    (self.get_mean_speed() ** 2 // self.height) *
-                    self.coeff_calorie_walk2 * self.weight) * (self.duration *
-                    self.minute))
+        calories = ((self.coeff_calorie_walk1 * self.weight
+                    + (self.get_mean_speed() ** 2 // self.height)
+                    * self.coeff_calorie_walk2 * self.weight) * (self.duration
+                    * self.minute))
     # (0.035 * вес + (средняя_скорость**2 // рост) * 0.029 * вес)
     # * время_тренировки_в_минутах
         return calories
